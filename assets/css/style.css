@@ -41,6 +41,65 @@ body {
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
+  color: #333;
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* General styles end */
+
+
+/* Header styles start */
+
+.header {
+  padding-top: 30px;
+  background: #FED100;
+}
+
+.header .logo {
+  width: 62px;
+}
+
+.header .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .nav-menu,
+.header .nav-menu + p {
+  display: none;
+}
+.header nav::after {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 20px;
+  background: url('../img/burger-line.png') no-repeat, 
+              url('../img/burger-line.png') no-repeat, 
+              url('../img/burger-line.png') no-repeat;
+  background-position: 0 0, 0 9px, 0 18px;
+}
+
+.nav-menu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav-item {
+  font-size: 18px;
+}
+
+.tel {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Header styles end */
