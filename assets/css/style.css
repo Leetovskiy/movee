@@ -50,6 +50,25 @@ body {
   margin: 0 auto;
 }
 
+.btn {
+  border: none;
+  width: 290px;
+  min-height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+} .btn a {
+  text-decoration: none;
+  flex-basis: 100%;
+}
+.btn-red {
+  background: #FF352B;
+} .btn-red a {
+  color: #F2F2F2;
+}
+
 /* General styles end */
 
 
@@ -103,3 +122,38 @@ body {
 }
 
 /* Header styles end */
+
+
+/* Promo styles start */
+
+.promo {
+  background:#FED100;
+  background-position: top 96px left 45px;
+  border: 1px solid transparent;
+  padding-top: 6px;
+  padding-bottom: 40px;
+}
+
+.promo .container {
+  background: url('../img/promo-bg-mob.png') no-repeat;
+  background-position: top 96px left 45px;
+}
+
+.promo .text {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 333px;
+}
+
+.promo .text-big {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.promo .features {
+  display: none;
+}
+
+/* Promo styles end */
