@@ -63,10 +63,18 @@ body {
   text-decoration: none;
   flex-basis: 100%;
 }
+
 .btn-red {
   background: #FF352B;
 } .btn-red a {
   color: #F2F2F2;
+}
+
+.btn-yellow {
+  background: #FED100;
+  font-weight: normal;
+} .btn-yellow a {
+  color: #333333;
 }
 
 /* General styles end */
@@ -99,6 +107,7 @@ body {
   display: block;
   width: 44px;
   height: 20px;
+  cursor: pointer;
   background: url('../img/burger-line.png') no-repeat, 
               url('../img/burger-line.png') no-repeat, 
               url('../img/burger-line.png') no-repeat;
@@ -219,3 +228,78 @@ body {
 }
 
 /* How-works styles end */
+
+
+/* Price styles start */
+
+.price {
+  background: #F8FBFF;
+  border: 1px solid transparent;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.price .title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.price .text {
+  display: none;
+}
+
+.price .card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.price .card:nth-child(1),
+.price .card:nth-child(3) {
+  display: none;
+}
+
+
+.price .card-title {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.price .card-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 44px;
+  list-style: none;
+}
+
+.price .list-item {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.price .list-item:last-child {
+  margin-bottom: 0;
+}
+
+.price .card-price {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.price .show-prices {
+  display: block;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  margin: 0 auto;
+}
+
+/* Price styles end */
