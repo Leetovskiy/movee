@@ -144,8 +144,9 @@ body {
 }
 
 .promo .container {
-  background: url('../img/promo-bg-mob.png') no-repeat;
-  background-position: top 96px left 45px;
+  background: url('../img/guy-with-the-box.png') no-repeat;
+  background-size: 248px;
+  background-position: left 45px bottom 35px;
 }
 
 .promo .text {
@@ -210,10 +211,10 @@ body {
   left: 0;
   top: 0;
 }
-.how-works .list-item:nth-child(1)::before { background: url('../img/01.png') no-repeat }
-.how-works .list-item:nth-child(2)::before { background: url('../img/02.png') no-repeat }
-.how-works .list-item:nth-child(3)::before { background: url('../img/03.png') no-repeat }
-.how-works .list-item:nth-child(4)::before { background: url('../img/04.png') no-repeat }
+.how-works .list-item:nth-child(1)::before { background: url('../img/01.svg') no-repeat }
+.how-works .list-item:nth-child(2)::before { background: url('../img/02.svg') no-repeat }
+.how-works .list-item:nth-child(3)::before { background: url('../img/03.svg') no-repeat }
+.how-works .list-item:nth-child(4)::before { background: url('../img/04.svg') no-repeat }
 
 
 .how-works .item-title {
