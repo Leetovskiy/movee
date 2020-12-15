@@ -161,14 +161,20 @@
         <p class="text">
           10 видов автомобилей от 800 кг до 10 тонн
         </p>
-  
-        <button class="car-type-btn">Газели</button>
-        <button class="car-type-btn">Каблуки</button>
-        <button class="car-type-btn">Грузовики</button>
+
+        <div class="car-type-buttons">
+          <button class="car-type-btn current">Газели</button>
+          <button class="car-type-btn">Каблуки</button>
+          <button class="car-type-btn">Грузовики</button>
+        </div>
   
         <section class="car-type car-type-gazelle">
           <div class="desc">
-            <h3 class="title">Газель 3 метра</h3>
+            <img src="assets/img/gazelle.png" 
+                  alt="Фотография газели" 
+                  class="car-photo">
+
+            <h3 class="desc-title">Газель 3 метра / 1,5 тонны</h3>
             <ul class="list">
               <li class="list-item">Ширина 2 м</li>
               <li class="list-item">Высота 2 м</li>
@@ -176,9 +182,14 @@
               <li class="list-item">Грузоподъемность 1,5 т</li>
             </ul>
 
-            <img src="assets/img/gazelle.png" 
-                  alt="Фотография газели" 
-                  class="car-photo">
+            <div class="slide-switchers">
+              <div class="switch-btn current"></div>
+              <div class="switch-btn"></div>
+              <div class="switch-btn"></div>
+              <div class="switch-btn"></div>
+              <div class="switch-btn"></div>
+            </div>
+
 
             <div class="btn btn-yellow">
               <a href="#">Заказать</a>
@@ -188,7 +199,11 @@
 
         <section class="car-type car-type-heel">
           <div class="desc">
-            <h3 class="title">Каблук</h3>
+            <img src="" 
+                  alt="Фотография каблука" 
+                  class="car-photo">
+
+            <h3 class="desc-title">Каблук</h3>
             <ul class="list">
               <li class="list-item">Хар-ка 1</li>
               <li class="list-item">Хар-ка 2</li>
@@ -196,9 +211,6 @@
               <li class="list-item">Хар-ка 4</li>
             </ul>
 
-            <img src="" 
-                  alt="Фотография каблука" 
-                  class="car-photo">
 
             <div class="btn btn-yellow">
               <a href="#">Заказать</a>
@@ -208,7 +220,11 @@
 
         <section class="car-type car-type-truck">
           <div class="desc">
-            <h3 class="title">Грузовик</h3>
+            <img src="" 
+                  alt="Фотография грузовика" 
+                  class="car-photo">
+
+            <h3 class="desc-title">Грузовик</h3>
             <ul class="list">
               <li class="list-item">Хар-ка 1</li>
               <li class="list-item">Хар-ка 2</li>
@@ -216,9 +232,6 @@
               <li class="list-item">Хар-ка 4</li>
             </ul>
 
-            <img src="" 
-                  alt="Фотография грузовика" 
-                  class="car-photo">
 
             <div class="btn btn-yellow">
               <a href="#">Заказать</a>
