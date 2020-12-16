@@ -59,6 +59,8 @@ body {
   font-weight: bold;
   font-size: 20px;
   display: flex;
+  box-sizing: border-box;
+  user-select: none;
 } .btn a {
   text-decoration: none;
   flex-basis: 100%;
@@ -75,6 +77,10 @@ body {
   font-weight: normal;
 } .btn-yellow a {
   color: #333333;
+}
+
+.btn-bordered {
+  border: 1px solid #333333;
 }
 
 /* General styles end */
@@ -205,7 +211,6 @@ body {
   display: block;
   width: 60px;
   height: 60px;
-  background: #000000;
 
   position: absolute;
   left: 0;
@@ -392,3 +397,66 @@ body {
 }
 
 /* Cars styles end */
+
+
+/* Reviews styles start */
+
+.reviews {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background: #FED100;
+}
+
+.reviews .title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.reviews .wrapper {
+  margin-bottom: 36px;
+}
+
+.reviews .review:first-child,
+.reviews .review:last-child {
+  display: none;
+}
+
+.reviews .review {
+  margin-bottom: 40px;
+}
+
+.reviews .review .name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.reviews .review .date,
+.reviews .review .rating-wrapper {
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+  margin-bottom: 36px;
+}
+
+.reviews .review .rating-stars {
+  pointer-events: none;
+  user-select: none;
+}
+
+.reviews .review .text {
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.reviews .review .read-more {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Reviews styles end */
