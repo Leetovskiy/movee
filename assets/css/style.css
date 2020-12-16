@@ -50,6 +50,17 @@ body {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
 .btn {
   border: none;
   width: 290px;
@@ -59,6 +70,8 @@ body {
   font-weight: bold;
   font-size: 20px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   user-select: none;
 } .btn a {
@@ -462,3 +475,78 @@ body {
 }
 
 /* Reviews styles end */
+
+
+/* Order styles start */
+
+.order {
+  padding-top: 62px;
+  padding-bottom: 70px;
+}
+
+.order .title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 222px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.order .text {
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.order .order-form .field {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333333;
+  padding: 0 5px 14px 5px;
+  margin-bottom: 40px;
+}
+.order .order-form .field:focus {
+  outline: none;
+}
+
+.order .order-form .tel-field {
+  margin-bottom: 60px;
+}
+
+.order .order-form .field::placeholder {
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.order .order-form .order-btn {
+  margin-bottom: 14px;
+}
+
+.order .order-form .agreement-label {
+  display: flex;
+}
+
+.order .order-form .agreement-input {
+  appearance: none;
+}
+
+.order .order-form .agreement-checkbox {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #333;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.order .order-form .agreement-input:checked + .agreement-checkbox {
+  background: url('../img/check.svg') no-repeat center;
+}
+
+.order .order-form .agreement-desc {
+  font-size: 12px;
+  line-height: 15px;
+  user-select: none;
+}
+
+/* Order styles end */

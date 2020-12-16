@@ -314,21 +314,32 @@
         <form class="order-form" action="#" method="GET">
           <label>
             <span class="visually-hidden">Ваше имя</span>
-            <input type="text" class="name-field" placeholder="Ваше имя">
+            <input type="text" 
+                    class="name-field field" 
+                    placeholder="Ваше имя" 
+                    required>
           </label>
 
           <label>
             <span class="visually-hidden">Телефон</span>
-            <input type="tel" class="tel-field" placeholder="Телефон">
+            <input type="tel" 
+                    class="tel-field field" 
+                    placeholder="Телефон" 
+                    required>
           </label>
 
           <button class="order-btn btn btn-red" type="submit">
             Перезвонить мне
           </button>
 
-          <label>
-            <input type="checkbox" name="agreement">
-            <span>Даю согласие на обработку данных</span>
+          <label class="agreement-label">
+            <input class="agreement-input visually-hidden" 
+                    type="checkbox" 
+                    name="agreement" 
+                    checked 
+                    required>
+            <span class="agreement-checkbox"></span>
+            <span class="agreement-desc">Даю согласие на обработку данных</span>
           </label>
         </form>
 
