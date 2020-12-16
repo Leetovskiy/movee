@@ -68,6 +68,8 @@ body {
 
 .btn-red {
   background: #FF352B;
+  color: #f2f2f2;
+  text-align: center;
 } .btn-red a {
   color: #F2F2F2;
 }
