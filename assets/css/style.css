@@ -550,3 +550,47 @@ body {
 }
 
 /* Order styles end */
+
+
+/* Contacts styles start */
+
+.contacts .map {
+  position: relative;
+  min-height: 524px;
+  overflow: hidden;
+}
+
+.contacts .map .pic {
+  height: 524px;
+  position: absolute;
+  left: -680px;
+}
+
+.contacts .wrapper {
+  padding-top: 46px;
+  padding-bottom: 44px;
+  padding-left: 28px;
+}
+
+.contacts .title {
+  display: none;
+}
+
+.contacts p {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.contacts .email a {
+  color: #333;
+  border-bottom: 1px solid #333;
+  text-decoration: none;
+}
+
+.contacts .socials {
+  display: none;
+}
+
+/* Contacts styles end */
