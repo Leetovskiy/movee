@@ -135,17 +135,17 @@ body {
   background-position: 0 0, 0 9px, 0 18px;
 }
 
-.nav-menu {
+.header .nav-menu {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.nav-item {
+.header .nav-item {
   font-size: 18px;
 }
 
-.tel {
+.header .tel {
   font-size: 24px;
   font-weight: bold;
   text-decoration: underline;
