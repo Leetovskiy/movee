@@ -594,3 +594,124 @@ body {
 }
 
 /* Contacts styles end */
+
+
+/* Footer styles start */
+
+.footer {
+  background: #FED100;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.footer__policies {
+  margin-bottom: 46px;
+}
+
+.footer__policies .logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+
+.footer__policies .policy {
+  text-align: center;
+  max-width: 238px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+.footer__policies .policy .link {
+  color: #333;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.footer__nav {
+  margin-bottom: 46px;
+}
+
+.footer__nav .nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.footer__nav .nav-item {
+  margin-bottom: 15px;
+}
+
+.footer__nav .nav-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer__contacts {
+  margin: 0 auto;
+  margin-bottom: 46px;
+  width: 166px;
+}
+
+.footer__contacts .socials {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 166px;
+}
+
+.footer__contacts .social-link span {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
+.footer__contacts .social .social-link::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: #000;
+}
+.footer__contacts .social-yt .social-link::before { 
+  background: url('../img/social-yt.svg') no-repeat center;
+}
+.footer__contacts .social-vk .social-link::before { 
+  background: url('../img/social-vk.svg') no-repeat center;
+}
+.footer__contacts .social-fb .social-link::before { 
+  background: url('../img/social-fb.svg') no-repeat center;
+}
+.footer__contacts .social-inst .social-link::before { 
+  background: url('../img/social-inst.svg') no-repeat center;
+}
+
+.footer__contacts .email {
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.footer__feedback .feedback-btn {
+  color: #333;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.footer__feedback .tel {
+  display: none;
+}
+
+/* Footer styles end */
