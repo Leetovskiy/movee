@@ -74,6 +74,8 @@ body {
   justify-content: center;
   box-sizing: border-box;
   user-select: none;
+  cursor: pointer;
+  transition: .1s;
 } .btn a {
   text-decoration: none;
   flex-basis: 100%;
@@ -86,6 +88,12 @@ body {
 } .btn-red a {
   color: #F2F2F2;
 }
+.btn-red:hover {
+  background: #FF6860;
+}
+.btn-red:active {
+  background: #A6160E;
+}
 
 .btn-yellow {
   background: #FED100;
@@ -93,9 +101,22 @@ body {
 } .btn-yellow a {
   color: #333333;
 }
+.btn-yellow:hover {
+  background: #FFDD40;
+}
+.btn-yellow:active {
+  background: #A58800;
+}
 
 .btn-bordered {
   border: 1px solid #333333;
+  font-weight: normal;
+  background: transparent;
+} .btn-bordered a {
+  color: #333;
+}
+.btn-bordered:hover {
+  border-style: dashed;
 }
 
 /* General styles end */
@@ -321,6 +342,14 @@ body {
   cursor: pointer;
   text-decoration: underline;
   margin: 0 auto;
+  transition: .1s;
+}
+.price .show-prices:hover {
+  color: #FED100;
+}
+.price .show-prices:active {
+  color: #A58800;
+  text-decoration: none;
 }
 
 /* Price styles end */
@@ -359,10 +388,23 @@ body {
   padding: 12px 12px;
   font-size: 16px;
 }
+.cars .car-type-btn:hover {
+  text-decoration: underline;
+}
+.cars .car-type-btn:active {
+  text-decoration: underline;
+  color: #FED100;
+}
 
 .cars .car-type-btn.current {
   font-weight: bold;
   border-bottom: 2px solid #FED100;
+  cursor: default;
+}
+.cars .car-type-btn.current:hover,
+.cars .car-type-btn.current:active {
+  text-decoration: none;
+  color: #333;
 }
 
 .cars .car-type .car-photo {
@@ -472,6 +514,13 @@ body {
   color: #333;
   font-weight: bold;
   margin-bottom: 30px;
+  transition: .1s;
+}
+.reviews .review .read-more:hover {
+  text-decoration: none;
+}
+.reviews .review .read-more:active {
+  color: #A58800;
 }
 
 /* Reviews styles end */
@@ -588,6 +637,12 @@ body {
   border-bottom: 1px solid #333;
   text-decoration: none;
 }
+.contacts .email a:hover {
+  border: none;
+}
+.contacts .email a:active {
+  color: #A58800;
+}
 
 .contacts .socials {
   display: none;
@@ -626,6 +681,12 @@ body {
   line-height: 21px;
   text-decoration: none;
 }
+.footer__policies .policy .link:hover {
+  text-decoration: underline;
+}
+.footer__policies .policy .link:active {
+  color: #A58800;
+}
 
 .footer__nav {
   margin-bottom: 46px;
@@ -647,6 +708,12 @@ body {
 .footer__nav .nav-link {
   color: #333;
   text-decoration: none;
+}
+.footer__nav .nav-link:hover {
+  text-decoration: underline;
+}
+.footer__nav .nav-link:active {
+  color: #A58800;
 }
 
 .footer__contacts {
@@ -702,6 +769,12 @@ body {
   text-decoration: none;
   font-size: 20px;
   border-bottom: 1px solid #333;
+}
+.footer__contacts .email:hover {
+  border: none;
+}
+.footer__contacts .email:active {
+  color: #A58800;
 }
 
 .footer__feedback .feedback-btn {
