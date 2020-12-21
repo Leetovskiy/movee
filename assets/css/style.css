@@ -49,6 +49,11 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media (min-width:321px) and (max-width:480px) {
+  .container {
+    max-width: 480px;
+  }
+}
 
 .visually-hidden {
   position: absolute !important;
@@ -188,7 +193,7 @@ body {
 .promo .container {
   background: url('../img/guy-with-the-box.png') no-repeat;
   background-size: 248px;
-  background-position: left 45px bottom 35px;
+  background-position: left 50% bottom 35px;
 }
 
 .promo .text {
@@ -197,6 +202,17 @@ body {
   text-align: center;
   margin: 0;
   margin-bottom: 333px;
+}
+
+.promo .promo-btn {
+  margin: 0 auto;
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  .promo .promo-btn {
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(255,255,255,1);
+    box-shadow: 5px 5px 0px 0px rgba(255,255,255,1);
+  }
 }
 
 .promo .text-big {
@@ -231,6 +247,12 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+@media (min-width:321px) and (max-width:480px) {
+  .how-works .list {
+    max-width: 290px;
+    margin: 0 auto;
+  }
 }
 
 .how-works .list-item {
@@ -335,6 +357,10 @@ body {
   margin-bottom: 50px;
 }
 
+.price .card-btn {
+  margin: 0 auto;
+}
+
 .price .show-prices {
   display: block;
   border: none;
@@ -378,7 +404,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 auto;
   margin-bottom: 40px;
+
+}
+@media (min-width:321px) and (max-width:480px) {
+  .cars .car-type-buttons {
+    max-width: 400px;
+  }
 }
 
 .cars .car-type-btn {
@@ -394,6 +427,10 @@ body {
 .cars .car-type-btn:active {
   text-decoration: underline;
   color: #FED100;
+}
+
+.cars .car-type .order-btn {
+  margin: 0 auto;
 }
 
 .cars .car-type-btn.current {
@@ -523,6 +560,10 @@ body {
   color: #A58800;
 }
 
+.reviews .reviews-btn {
+  margin: 0 auto;
+}
+
 /* Reviews styles end */
 
 
@@ -545,6 +586,7 @@ body {
 
 .order .text {
   font-size: 15px;
+  text-align: center;
   margin: 0;
   margin-bottom: 50px;
 }
@@ -569,7 +611,16 @@ body {
 }
 
 .order .order-form .order-btn {
+  margin: 0 auto;
   margin-bottom: 14px;
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  .order .order-form .order-btn {
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(254,207,0,1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(254,207,0,1);
+    box-shadow: 5px 5px 0px 0px rgba(254,207,0,1);
+
+  }
 }
 
 .order .order-form .agreement-label {
@@ -620,6 +671,11 @@ body {
   padding-bottom: 44px;
   padding-left: 28px;
 }
+@media (min-width: 321px) and (max-width: 480px) {
+  .contacts .wrapper {
+    text-align: right;
+  }
+}
 
 .contacts .title {
   display: none;
@@ -645,7 +701,56 @@ body {
 }
 
 .contacts .socials {
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 166px;
   display: none;
+}
+
+.contacts .link span {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
+.contacts .social .link::before {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 26px;
+}
+.contacts .social-yt .link::before { 
+  background: url('../img/social-yt.svg') no-repeat center;
+  background-size: contain;
+}
+.contacts .social-vk .link::before { 
+  background: url('../img/social-vk.svg') no-repeat center;
+  background-size: contain;
+}
+.contacts .social-fb .link::before { 
+  background: url('../img/social-fb.svg') no-repeat center;
+  background-size: contain;
+}
+.contacts .social-inst .link::before { 
+  background: url('../img/social-inst.svg') no-repeat center;
+  background-size: contain;
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .contacts .socials {
+    display: flex;
+  }
 }
 
 /* Contacts styles end */
@@ -747,22 +852,27 @@ body {
 .footer__contacts .social .social-link::before {
   content: '';
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 26px;
+  height: 26px;
   background: #000;
 }
 .footer__contacts .social-yt .social-link::before { 
   background: url('../img/social-yt.svg') no-repeat center;
+  background-size: contain;
 }
 .footer__contacts .social-vk .social-link::before { 
   background: url('../img/social-vk.svg') no-repeat center;
+  background-size: contain;
 }
 .footer__contacts .social-fb .social-link::before { 
   background: url('../img/social-fb.svg') no-repeat center;
+  background-size: contain;
 }
 .footer__contacts .social-inst .social-link::before { 
   background: url('../img/social-inst.svg') no-repeat center;
+  background-size: contain;
 }
+
 
 .footer__contacts .email {
   color: #333;
@@ -778,13 +888,20 @@ body {
 }
 
 .footer__feedback .feedback-btn {
+  margin: 0 auto;
   color: #333;
   text-decoration: none;
   font-weight: normal;
 }
 
 .footer__feedback .tel {
+  text-align: center;
   display: none;
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  .footer__feedback .tel {
+    display: block;
+  }
 }
 
 /* Footer styles end */
